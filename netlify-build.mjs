@@ -29,7 +29,7 @@ for (const [src, dest] of [["landing.html", "index.html"], ["contact.html", "con
 }
 
 writeFileSync(join(out, "site.webmanifest"), JSON.stringify({
-  name: "Reachout", short_name: "Reachout", start_url: "/", display: "standalone", background_color: "#ffffff", theme_color: "#4f46e5",
+  name: "Reachout", short_name: "Reachout", start_url: "/", display: "standalone", background_color: "#fbfaf7", theme_color: "#0f6b54",
   icons: [{ src: "/assets/icon-192.png", sizes: "192x192", type: "image/png" }, { src: "/assets/icon-512.png", sizes: "512x512", type: "image/png" }],
 }));
 writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${site}/sitemap.xml\n`);
