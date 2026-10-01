@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reachout · Outreach, job hunt and your own website in one place</title>
+<meta name="description" content="Send personal WhatsApp and email campaigns from your own accounts, see who replied and what they want, track every job application from your inbox, and publish your own website. Free.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="{{SITE_URL}}/">
+<meta name="theme-color" content="#4f46e5">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Reachout">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="{{SITE_URL}}/">
+<meta property="og:title" content="Reachout · Outreach, job hunt and your own website in one place">
+<meta property="og:description" content="Personal WhatsApp and email campaigns, replies understood for you, applications tracked from your inbox, and a website you build in minutes.">
+<meta property="og:image" content="{{SITE_URL}}/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Reachout: outreach, job hunt and your own website in one place">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reachout · Outreach, job hunt and your own website in one place">
+<meta name="twitter:description" content="Personal WhatsApp and email campaigns, replies understood for you, applications tracked from your inbox, and a website you build in minutes.">
+<meta name="twitter:image" content="{{SITE_URL}}/assets/og.png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Reachout", "applicationCategory": "BusinessApplication", "operatingSystem": "Web browser", "url": "{{SITE_URL}}/", "description": "Personal WhatsApp and email outreach from your own accounts, reply detection, job application tracking from your inbox, job matches, and a one-page website builder.", "featureList": ["Personalised WhatsApp and email campaigns", "Reply detection and suggested answers", "Job applications tracked from your inbox", "Job matches scored against your profile", "One-page website builder with SEO", "Website enquiries inbox", "GitHub and LinkedIn workspace", "Encrypted data and passwordless sign-in"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Whose number and email are messages sent from?", "acceptedAnswer": {"@type": "Answer", "text": "Your own. You connect Gmail or Outlook with an app password and link WhatsApp by scanning a QR code, just like WhatsApp Web. Recipients see your name, your address and your number."}}, {"@type": "Question", "name": "How does Reachout know who replied?", "acceptedAnswer": {"@type": "Answer", "text": "It reads your mailbox read-only and matches replies to the emails you sent, even when people answer in the same thread. It shows what they wrote, what they're asking for, and suggests an answer you can send from inside the app."}}, {"@type": "Question", "name": "How are my job applications tracked?", "acceptedAnswer": {"@type": "Answer", "text": "Reachout reads application emails from job sites and companies (applied, in review, assessment, interview, offer, rejected) and keeps one timeline per application. It syncs every morning, and you can edit, hide or merge anything."}}, {"@type": "Question", "name": "Can I build a website without coding?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Pick a theme, fonts and colours, add sections like projects, experience and contact, and publish. Your projects can come straight from GitHub with their live links, and messages from the contact form land in your Leads page."}}, {"@type": "Question", "name": "Is it safe for my WhatsApp account?", "acceptedAnswer": {"@type": "Answer", "text": "WhatsApp doesn't officially allow automated messaging, and numbers that message many strangers can be restricted. Reachout spaces messages out and caps daily volume, but keep batches small and contact people who expect to hear from you."}}, {"@type": "Question", "name": "Does Reachout scrape LinkedIn or guess email addresses?", "acceptedAnswer": {"@type": "Answer", "text": "No. LinkedIn is used only through its official sign-in and sharing, with no scraping, auto-messaging or auto-applying. Reachout never guesses people's email addresses."}}, {"@type": "Question", "name": "Who can see my data?", "acceptedAnswer": {"@type": "Answer", "text": "Only you. Every account has a private workspace, everything stored is encrypted, sign-in uses one-time codes instead of passwords, and deleting your account removes all of your data."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Reachout is free to use. There's no credit card and nothing to install."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Reachout", "url": "{{SITE_URL}}/", "logo": "{{SITE_URL}}/assets/icon-512.png"}</script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/landing.css">
+</head>
+<body class="lp">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="lp-nav" id="nav">
+  <div class="lp-wrap lp-nav-in">
+    <a href="/" class="brand-mark lp-brand"><span class="logo" data-icon="send"></span>Reachout</a>
+    <nav class="lp-links" id="navLinks" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#tour">Product tour</a>
+      <a href="#website">Website builder</a>
+      <a href="#security">Security</a>
+      <a href="#faq">FAQ</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <span class="lp-sp"></span>
+    <button class="lp-icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme" data-icon="moon"></button>
+    <a href="/login" class="btn btn-ghost lp-hide-xs" id="loginBtn">Log in</a>
+    <a href="/signup" class="btn btn-primary" id="ctaTop">Get started</a>
+    <button class="lp-icon-btn lp-menu" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks" data-icon="menu"></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================================================================ hero -->
+<section class="lp-hero">
+  <div class="lp-aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="lp-grid-bg" aria-hidden="true"></div>
+  <div class="lp-wrap lp-hero-in">
+    <a class="lp-pill" href="#website" data-rv><b>New</b>Build and publish your own website <span aria-hidden="true">→</span></a>
+    <h1 data-rv>Outreach, job hunt and your own website, <span class="lp-grad-text">all in one place</span></h1>
+    <p class="lp-lead" data-rv>Send personal WhatsApp and email messages from your own accounts. See who replied and what they want. Track every application straight from your inbox. Show your best work on a website you build in minutes.</p>
+    <div class="lp-cta" data-rv>
+      <a href="/signup" class="btn btn-primary btn-lg">Start free</a>
+      <a href="#tour" class="btn btn-lg lp-btn-soft">Take the tour</a>
+    </div>
+    <ul class="lp-trust" data-rv>
+      <li data-icon="check">Free, no credit card</li>
+      <li data-icon="check">Sign in with a code, no password</li>
+      <li data-icon="check">Everything encrypted</li>
+    </ul>
+
+    <!-- product shot -->
+    <div class="lp-shot-wrap" data-rv>
+      <div class="lp-shot" aria-hidden="true">
+        <div class="lp-shot-bar"><i></i><i></i><i></i><span>reachout.app/app/dashboard</span></div>
+        <div class="lp-shot-body">
+          <div class="lp-mside">
+            <span class="lp-mbrand"><span class="logo" data-icon="send"></span>Reachout</span>
+            <span class="lp-mcta" data-icon="plus">New campaign</span>
+            <span class="on" data-icon="home">Dashboard</span>
+            <span data-icon="activity">Activity</span>
+            <small>Outreach</small>
+            <span data-icon="users">Contacts</span>
+            <span data-icon="reply">Replies <b>3</b></span>
+            <span data-icon="inbox">Inbox insights</span>
+            <small>Career</small>
+            <span data-icon="briefcase">Applications <b>2</b></span>
+            <span data-icon="zap">Job matches</span>
+            <small>My website</small>
+            <span data-icon="star">Website</span>
+          </div>
+          <div class="lp-mmain">
+            <div class="lp-mhead"><b>Good morning, Neha</b><span>Synced at 6:00 · 42 new emails read</span></div>
+            <div class="lp-kpis">
+              <div><span>Messages sent</span><b>128</b><em class="up">+24%</em></div>
+              <div><span>Replies</span><b>19</b><em class="up">+6</em></div>
+              <div><span>Applications</span><b>37</b><em>5 in review</em></div>
+              <div><span>Interviews</span><b>4</b><em class="up">2 this week</em></div>
+            </div>
+            <div class="lp-mrow">
+              <div class="lp-chart">
+                <div class="lp-chart-h"><b>Activity</b><span>Last 30 days</span></div>
+                <svg viewBox="0 0 300 110" preserveAspectRatio="none">
+                  <defs><linearGradient id="lpg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".35"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+                  <path class="lp-area" d="M0,90 C20,84 30,70 50,72 C70,74 80,52 100,50 C120,48 130,62 150,56 C170,50 180,30 200,34 C220,38 230,22 250,18 C270,14 285,24 300,16 L300,110 L0,110 Z" fill="url(#lpg)"/>
+                  <path class="lp-line" d="M0,90 C20,84 30,70 50,72 C70,74 80,52 100,50 C120,48 130,62 150,56 C170,50 180,30 200,34 C220,38 230,22 250,18 C270,14 285,24 300,16"/>
+                  <path class="lp-line2" d="M0,100 C30,98 50,92 80,90 C110,88 140,80 170,82 C200,84 230,70 260,66 C280,64 290,60 300,58"/>
+                </svg>
+              </div>
+              <div class="lp-pipe">
+                <div class="lp-chart-h"><b>Applications</b><span>by status</span></div>
+                <div class="lp-bar"><span>Applied</span><i style="--w:92%"></i><b>18</b></div>
+                <div class="lp-bar"><span>In review</span><i style="--w:48%"></i><b>9</b></div>
+                <div class="lp-bar"><span>Assessment</span><i style="--w:28%"></i><b>5</b></div>
+                <div class="lp-bar"><span>Interview</span><i style="--w:22%" class="t"></i><b>4</b></div>
+                <div class="lp-bar"><span>Offer</span><i style="--w:8%" class="g"></i><b>1</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- live toasts -->
+      <div class="lp-toasts" aria-hidden="true">
+        <div class="lp-toast on"><span class="lp-toast-ic rp" data-icon="reply"></span><div><b>Riya from Northwind replied</b><span>Interested · asks for your resume</span></div></div>
+        <div class="lp-toast"><span class="lp-toast-ic iv" data-icon="calendar"></span><div><b>Interview scheduled</b><span>Orbit Labs · Thu, 11:30</span></div></div>
+        <div class="lp-toast"><span class="lp-toast-ic ld" data-icon="inbox"></span><div><b>New enquiry on your website</b><span>“Loved your projects, are you free…”</span></div></div>
+      </div>
+      <div class="lp-float lp-float-a" aria-hidden="true"><span data-icon="zap"></span><div><b>92% match</b><span>Backend Engineer · Remote</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ works with -->
+<section class="lp-works" aria-label="Works with">
+  <div class="lp-wrap">
+    <small>Works with the accounts you already have</small>
+    <div class="lp-works-row">
+      <span data-icon="mail">Gmail</span>
+      <span data-icon="envelope">Outlook</span>
+      <span data-icon="phone">WhatsApp</span>
+      <span data-icon="linkedin">LinkedIn</span>
+      <span data-icon="github">GitHub</span>
+      <span data-icon="naukri">Naukri</span>
+      <span data-icon="briefcase">Indeed</span>
+      <span data-icon="sheet">Excel &amp; CSV</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ features (bento) -->
+<section class="lp-block" id="features">
+  <div class="lp-wrap">
+    <div class="lp-head" data-rv>
+      <span class="lp-eyebrow">Features</span>
+      <h2>Everything between “hello” and “you're hired”</h2>
+      <p>Three workspaces that share one contact list, one inbox and one timeline: <b>outreach</b>, <b>career</b> and <b>your website</b>.</p>
+    </div>
+
+    <div class="lp-bento">
+      <article class="lp-card lp-b-wide" data-rv>
+        <div class="lp-card-txt">
+          <span class="lp-tag o">Outreach</span>
+          <h3>Personal messages, sent for you</h3>
+          <p>Write once with <code>{name}</code> and <code>{company}</code>. Everyone gets their own copy on WhatsApp, email or both, with your résumé or brochure attached, spaced out safely.</p>
+        </div>
+        <div class="lp-mini lp-mini-msg" aria-hidden="true">
+          <div class="lp-bubble">Hi <mark>Riya</mark>, I came across the <mark>Backend Engineer</mark> role at <mark>Northwind</mark> and would love to share how I…</div>
+          <div class="lp-bubble lp-doc"><span class="lp-fic">PDF</span>Neha_Sharma_Resume.pdf</div>
+          <div class="lp-sendrow"><span class="lp-dot ok"></span>Sent to 24 of 30 · next in 42s</div>
+        </div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag o">Replies</span>
+        <h3>Know who replied, and what they want</h3>
+        <p>Replies are matched to what you sent, even in the same thread, and read for you.</p>
+        <div class="lp-chips" aria-hidden="true"><span class="g">Interested</span><span>Asks for résumé</span><span class="v">Meeting link</span><span>Phone shared</span></div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag o">Reply in one click</span>
+        <h3>Answer without opening Gmail</h3>
+        <p>Get a suggested answer with your details filled in, attach files, and send it in the same thread.</p>
+        <div class="lp-compose" aria-hidden="true"><span></span><span></span><span class="s"></span><b>Send reply</b></div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag c">Career</span>
+        <h3>Applications that track themselves</h3>
+        <p>Every “application received”, assessment, interview and offer email becomes one timeline per job, synced each morning.</p>
+        <ol class="lp-timeline" aria-hidden="true"><li class="d">Applied</li><li class="d">In review</li><li class="d">Assessment</li><li class="n">Interview</li><li>Offer</li></ol>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag c">Job matches</span>
+        <h3>Only the jobs that fit you</h3>
+        <p>Job alerts from Naukri, LinkedIn, Indeed and more are scored against your skills, experience and cities.</p>
+        <div class="lp-match" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15"/><circle cx="18" cy="18" r="15" class="v"/></svg><div><b>Backend Engineer</b><span>Remote · 2–4 yrs · Python, AWS</span></div></div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag o">Inbox insights</span>
+        <h3>Your inbox, grouped by company</h3>
+        <p>See recruiters, rejections, assessments and interviews per company, with charts that show what's working.</p>
+        <div class="lp-bars" aria-hidden="true"><i style="--h:40%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:80%"></i><i style="--h:58%"></i><i style="--h:92%"></i><i style="--h:70%"></i></div>
+      </article>
+
+      <article class="lp-card lp-b-wide lp-b-site" data-rv>
+        <div class="lp-card-txt">
+          <span class="lp-tag w">Website</span>
+          <h3>Your own website, no code</h3>
+          <p>Choose a theme, colours and fonts, add sections, and publish. Projects come from GitHub with live links, and messages from your contact form land in <b>Leads</b>.</p>
+          <a class="lp-link" href="#website">See the builder →</a>
+        </div>
+        <div class="lp-mini lp-mini-site" aria-hidden="true">
+          <div class="lp-ms-nav"><b>Neha Sharma</b><span></span><span></span><span></span></div>
+          <div class="lp-ms-hero"><small>Hi, I'm Neha 👋</small><b>Full-stack Engineer</b><span class="lp-ms-btn">View my work</span></div>
+          <div class="lp-ms-cards"><i></i><i></i><i></i></div>
+        </div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag g">Integrations</span>
+        <h3>GitHub and LinkedIn, the safe way</h3>
+        <p>Edit repos and review pull requests, and post to LinkedIn through its official sign-in. No scraping, no bots.</p>
+        <div class="lp-intg" aria-hidden="true"><span data-icon="github"></span><span data-icon="linkedin"></span><span data-icon="naukri"></span></div>
+      </article>
+
+      <article class="lp-card" data-rv>
+        <span class="lp-tag g">Notifications</span>
+        <h3>Never miss a reply</h3>
+        <p>Live alerts in the app, browser push notifications, and Mac alerts for new replies, interviews and enquiries.</p>
+        <div class="lp-bell" aria-hidden="true"><span data-icon="bell"></span><b>3</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ product tour -->
+<section class="lp-block lp-tour-sec" id="tour">
+  <div class="lp-wrap">
+    <div class="lp-head" data-rv>
+      <span class="lp-eyebrow">Product tour</span>
+      <h2>See how a day with Reachout looks</h2>
+      <p>From the first message to the offer letter.</p>
+    </div>
+
+    <div class="lp-tour" data-rv>
+      <div class="lp-tabs" role="tablist" aria-label="Product tour">
+        <button role="tab" aria-selected="true" aria-controls="tp-0" id="tt-0" data-tab="0"><span data-icon="send"></span><span><b>Campaigns</b><small>Reach out personally</small></span><i class="lp-prog"></i></button>
+        <button role="tab" aria-selected="false" aria-controls="tp-1" id="tt-1" data-tab="1" tabindex="-1"><span data-icon="reply"></span><span><b>Replies</b><small>Answer in one click</small></span><i class="lp-prog"></i></button>
+        <button role="tab" aria-selected="false" aria-controls="tp-2" id="tt-2" data-tab="2" tabindex="-1"><span data-icon="briefcase"></span><span><b>Applications</b><small>Tracked from your inbox</small></span><i class="lp-prog"></i></button>
+        <button role="tab" aria-selected="false" aria-controls="tp-3" id="tt-3" data-tab="3" tabindex="-1"><span data-icon="star"></span><span><b>Website</b><small>Show your work</small></span><i class="lp-prog"></i></button>
+      </div>
+
+      <div class="lp-panels">
+        <div class="lp-panel on" role="tabpanel" id="tp-0" aria-labelledby="tt-0">
+          <div class="lp-panel-txt">
+            <h3>A campaign in five steps</h3>
+            <ul class="lp-checks">
+              <li data-icon="check">Import contacts from Excel or CSV. Columns are detected and duplicates skipped.</li>
+              <li data-icon="check">Pick a template, personalise it and preview each person's copy live.</li>
+              <li data-icon="check">Attach your résumé or brochure once, reuse it anywhere.</li>
+              <li data-icon="check">Random gaps and a daily limit keep your accounts in good standing.</li>
+              <li data-icon="check">People who already replied are skipped automatically.</li>
+            </ul>
+          </div>
+          <div class="lp-panel-vis" aria-hidden="true">
+            <div class="lp-win">
+              <div class="lp-wsteps"><span class="d">Contacts</span><span class="d">Message</span><span class="d">Files</span><span class="n">Review</span><span>Send</span></div>
+              <div class="lp-send">
+                <div class="lp-send-row"><b>Riya Kapoor</b><span>Northwind</span><em class="ok">Sent</em></div>
+                <div class="lp-send-row"><b>Arjun Mehta</b><span>Orbit Labs</span><em class="ok">Sent</em></div>
+                <div class="lp-send-row"><b>Sara Khan</b><span>Lumen Health</span><em class="go">Sending…</em></div>
+                <div class="lp-send-row"><b>Daniel Roy</b><span>Fieldstone</span><em>Queued</em></div>
+                <div class="lp-send-row"><b>Meera Iyer</b><span>Kalpa Systems</span><em class="sk">Replied · skipped</em></div>
+              </div>
+              <div class="lp-progress"><i style="--w:46%"></i><span>12 of 26 sent · next in 38s</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lp-panel" role="tabpanel" id="tp-1" aria-labelledby="tt-1" hidden>
+          <div class="lp-panel-txt">
+            <h3>Replies, understood</h3>
+            <ul class="lp-checks">
+              <li data-icon="check">Replies are matched to your emails, even in the same thread.</li>
+              <li data-icon="check">Reachout reads the reply and spots what they want: interest, your résumé, a call, details.</li>
+              <li data-icon="check">A suggested answer is ready, with your notice period, CTC and links filled in.</li>
+              <li data-icon="check">Send from inside the app, threaded, with attachments.</li>
+              <li data-icon="check">The contact moves to “Interested” and gets a follow-up date.</li>
+            </ul>
+          </div>
+          <div class="lp-panel-vis" aria-hidden="true">
+            <div class="lp-win">
+              <div class="lp-mail">
+                <div class="lp-mail-h"><span class="lp-av">RK</span><div><b>Riya Kapoor</b><span>Re: Backend Engineer at Northwind</span></div><em>2m</em></div>
+                <p>Hi Neha, thanks for reaching out! Your profile looks like a great fit. Could you share your updated résumé and notice period? Happy to set up a call this week.</p>
+                <div class="lp-chips sm"><span class="g">Interested</span><span>Asks for résumé</span><span>Asks notice period</span><span class="v">Wants a call</span></div>
+              </div>
+              <div class="lp-reply">
+                <small>Suggested reply</small>
+                <p>Hi Riya, thank you! I've attached my résumé. My notice period is 30 days, and I'm free Thursday or Friday afternoon for a call…</p>
+                <div class="lp-reply-f"><span class="lp-fic">PDF</span><span>Resume.pdf</span><b>Send reply</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lp-panel" role="tabpanel" id="tp-2" aria-labelledby="tt-2" hidden>
+          <div class="lp-panel-txt">
+            <h3>Your job hunt, organised</h3>
+            <ul class="lp-checks">
+              <li data-icon="check">Application emails from job sites and companies are read every morning.</li>
+              <li data-icon="check">Each job gets one timeline: applied, review, assessment, interview, offer.</li>
+              <li data-icon="check">Interviews and offers trigger a notification the moment they arrive.</li>
+              <li data-icon="check">Edit, hide or merge anything. Your changes always win.</li>
+              <li data-icon="check">Job alerts become scored matches, so you apply where you fit.</li>
+            </ul>
+          </div>
+          <div class="lp-panel-vis" aria-hidden="true">
+            <div class="lp-win">
+              <div class="lp-apps">
+                <div class="lp-app"><span class="lp-co" style="--h:220">N</span><div><b>Backend Engineer</b><span>Northwind · via LinkedIn</span></div><em class="iv">Interview</em></div>
+                <div class="lp-app"><span class="lp-co" style="--h:280">O</span><div><b>Software Engineer II</b><span>Orbit Labs · via Naukri</span></div><em class="as">Assessment</em></div>
+                <div class="lp-app"><span class="lp-co" style="--h:160">L</span><div><b>Platform Engineer</b><span>Lumen Health · company site</span></div><em class="rv">In review</em></div>
+                <div class="lp-app"><span class="lp-co" style="--h:30">K</span><div><b>Full-stack Developer</b><span>Kalpa Systems · via Indeed</span></div><em class="of">Offer</em></div>
+                <div class="lp-app"><span class="lp-co" style="--h:340">F</span><div><b>Python Developer</b><span>Fieldstone · via Naukri</span></div><em>Applied</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lp-panel" role="tabpanel" id="tp-3" aria-labelledby="tt-3" hidden>
+          <div class="lp-panel-txt">
+            <h3>A website that works for you</h3>
+            <ul class="lp-checks">
+              <li data-icon="check">Twelve section types: intro, about, skills, projects, experience, contact and more.</li>
+              <li data-icon="check">Eight themes, 14 fonts, your own colours, with a live preview on desktop, tablet and phone.</li>
+              <li data-icon="check">Projects come from GitHub with their live links and previews.</li>
+              <li data-icon="check">Built for search: structured data, share cards, sitemap and an SEO score.</li>
+              <li data-icon="check">Visitor messages arrive in your Leads page with a notification.</li>
+            </ul>
+          </div>
+          <div class="lp-panel-vis" aria-hidden="true">
+            <div class="lp-win lp-win-split">
+              <div class="lp-ed">
+                <span class="on">Intro</span><span>About</span><span>Skills</span><span>Projects</span><span>Experience</span><span>Contact</span>
+                <div class="lp-seo"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15"/><circle cx="18" cy="18" r="15" class="v"/></svg><div><b>SEO 91</b><span>10 of 11 checks</span></div></div>
+              </div>
+              <div class="lp-ed-pv"><small>Hi, I'm Neha 👋</small><b>Full-stack Engineer</b><span>I build fast, reliable products.</span><i></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ website builder -->
+<section class="lp-block" id="website">
+  <div class="lp-wrap lp-split">
+    <div class="lp-split-txt" data-rv>
+      <span class="lp-eyebrow">Website builder</span>
+      <h2>Don't have a website yet? Make one in minutes.</h2>
+      <p>Reachout starts you with a finished one-page site, filled in from your profile and GitHub. Change anything, hit publish, and it's live at your own address. Try a theme:</p>
+      <div class="lp-swatches" role="radiogroup" aria-label="Preview a theme">
+        <button type="button" role="radio" aria-checked="true" data-theme-pv="midnight" style="--a:#6366f1;--b:#a855f7;--bg:#0b0d18" aria-label="Midnight"></button>
+        <button type="button" role="radio" aria-checked="false" data-theme-pv="paper" style="--a:#c2410c;--b:#ea580c;--bg:#faf7f2" aria-label="Paper"></button>
+        <button type="button" role="radio" aria-checked="false" data-theme-pv="ocean" style="--a:#0284c7;--b:#06b6d4;--bg:#f2f7fb" aria-label="Ocean"></button>
+        <button type="button" role="radio" aria-checked="false" data-theme-pv="forest" style="--a:#22c55e;--b:#a3e635;--bg:#0e1812" aria-label="Forest"></button>
+        <button type="button" role="radio" aria-checked="false" data-theme-pv="sunset" style="--a:#f43f5e;--b:#f59e0b;--bg:#1a0f14" aria-label="Sunset"></button>
+        <button type="button" role="radio" aria-checked="false" data-theme-pv="lavender" style="--a:#7c3aed;--b:#db2777;--bg:#f7f5ff" aria-label="Lavender"></button>
+      </div>
+      <ul class="lp-mini-list">
+        <li data-icon="github">Projects pulled from GitHub, with live links</li>
+        <li data-icon="search">SEO built in: Google-ready from day one</li>
+        <li data-icon="inbox">Contact form messages land in Leads</li>
+        <li data-icon="shield">Hosted for you, with strict security</li>
+      </ul>
+    </div>
+    <div class="lp-site-demo" data-rv aria-hidden="true">
+      <div class="lp-device">
+        <div class="lp-shot-bar"><i></i><i></i><i></i><span>reachout.app/p/neha</span></div>
+        <div class="lp-site" id="siteDemo" data-t="midnight">
+          <div class="lp-site-nav"><b>Neha Sharma</b><span>About</span><span>Projects</span><span>Contact</span></div>
+          <div class="lp-site-hero">
+            <div>
+              <span class="lp-site-badge"><i></i>Open to work</span>
+              <small>Hi, I'm Neha 👋</small>
+              <b>Full-stack Engineer</b>
+              <p>I build fast, reliable products people enjoy using.</p>
+              <div class="lp-site-btns"><span class="p">View my work</span><span>Get in touch</span></div>
+            </div>
+            <div class="lp-site-photo"></div>
+          </div>
+          <div class="lp-site-projects">
+            <div><i></i><b>Clinic scheduler</b><span>React · Node</span></div>
+            <div><i></i><b>Invoice parser</b><span>Python · AWS</span></div>
+            <div><i></i><b>Team dashboard</b><span>Next.js</span></div>
+          </div>
+          <div class="lp-site-foot">✦ Powered by <b>Reachout</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ security -->
+<section class="lp-block lp-sec" id="security">
+  <div class="lp-wrap">
+    <div class="lp-head" data-rv>
+      <span class="lp-eyebrow">Security &amp; privacy</span>
+      <h2>Your data is yours. We built it that way.</h2>
+      <p>Reachout handles your inbox, your contacts and your job hunt, so security isn't an add-on.</p>
+    </div>
+    <div class="lp-sec-grid">
+      <div class="lp-sec-card" data-rv><span data-icon="shield"></span><h3>Encrypted, all of it</h3><p>Contacts, emails, tokens and files are encrypted before they're stored. Email addresses are looked up by a keyed fingerprint, never in plain text.</p></div>
+      <div class="lp-sec-card" data-rv><span data-icon="stamp"></span><h3>No passwords to steal</h3><p>You sign in with a one-time code sent to your email. Sessions are short-lived, and you can log out on every device at once.</p></div>
+      <div class="lp-sec-card" data-rv><span data-icon="user"></span><h3>Your accounts, your voice</h3><p>Messages go out from your own Gmail, Outlook and WhatsApp. Your mailbox is read read-only, and nothing is ever marked as read.</p></div>
+      <div class="lp-sec-card" data-rv><span data-icon="eye"></span><h3>Respectful by design</h3><p>No LinkedIn scraping or bots, and no guessed email addresses. Research uses only emails that companies publish themselves.</p></div>
+      <div class="lp-sec-card" data-rv><span data-icon="zap"></span><h3>Hardened and rate-limited</h3><p>Strict security headers on every page, limits on sign-in attempts and sending, and a daily cap that protects your sender reputation.</p></div>
+      <div class="lp-sec-card" data-rv><span data-icon="trash"></span><h3>Leave any time</h3><p>Deleting your account removes everything: contacts, emails, files, website and history. No lingering copies in the app.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ how it works -->
+<section class="lp-block" id="how">
+  <div class="lp-wrap">
+    <div class="lp-head" data-rv>
+      <span class="lp-eyebrow">How it works</span>
+      <h2>Up and running before your coffee cools</h2>
+    </div>
+    <ol class="lp-steps">
+      <li data-rv><span class="lp-n">1</span><h3>Sign in with a code</h3><p>Enter your email and type the six-digit code we send. No password, no credit card.</p></li>
+      <li data-rv><span class="lp-n">2</span><h3>Connect your email</h3><p>Add a Gmail or Outlook app password. Link WhatsApp with a QR code if you want it too.</p></li>
+      <li data-rv><span class="lp-n">3</span><h3>Let Reachout get to work</h3><p>It reads your applications and replies, and syncs every morning. Then send your first campaign or publish your site.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================================================================ FAQ -->
+<section class="lp-block" id="faq">
+  <div class="lp-wrap lp-faq-wrap">
+    <div class="lp-head lp-head-left" data-rv>
+      <span class="lp-eyebrow">FAQ</span>
+      <h2>Questions, answered</h2>
+      <p>Something else? <a href="/contact">Ask us</a>. We usually reply within a working day.</p>
+    </div>
+    <div class="lp-faq" data-rv>
+      <details><summary>Whose number and email are messages sent from?</summary><p>Your own. You connect Gmail or Outlook with an app password and link WhatsApp by scanning a QR code, just like WhatsApp Web. Recipients see your name, your address and your number.</p></details>
+      <details><summary>How does Reachout know who replied?</summary><p>It reads your mailbox read-only and matches replies to the emails you sent, even when people answer in the same thread. It shows what they wrote, what they're asking for, and suggests an answer you can send from inside the app.</p></details>
+      <details><summary>How are my job applications tracked?</summary><p>Reachout reads application emails from job sites and companies (applied, in review, assessment, interview, offer, rejected) and keeps one timeline per application. It syncs every morning, and you can edit, hide or merge anything.</p></details>
+      <details><summary>Can I build a website without coding?</summary><p>Yes. Pick a theme, fonts and colours, add sections like projects, experience and contact, and publish. Your projects can come straight from GitHub with their live links, and messages from the contact form land in your Leads page.</p></details>
+      <details><summary>Is it safe for my WhatsApp account?</summary><p>WhatsApp doesn't officially allow automated messaging, and numbers that message many strangers can be restricted. Reachout spaces messages out and caps daily volume, but keep batches small and contact people who expect to hear from you.</p></details>
+      <details><summary>Does Reachout scrape LinkedIn or guess email addresses?</summary><p>No. LinkedIn is used only through its official sign-in and sharing, with no scraping, auto-messaging or auto-applying. Reachout never guesses people's email addresses.</p></details>
+      <details><summary>Who can see my data?</summary><p>Only you. Every account has a private workspace, everything stored is encrypted, sign-in uses one-time codes instead of passwords, and deleting your account removes all of your data.</p></details>
+      <details><summary>What does it cost?</summary><p>Reachout is free to use. There's no credit card and nothing to install.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ final CTA -->
+<section class="lp-wrap">
+  <div class="lp-final" data-rv>
+    <div class="lp-aurora" aria-hidden="true"><i></i><i></i></div>
+    <h2>Your next opportunity is one message away</h2>
+    <p>Create a free account, connect your email, and let Reachout handle the busywork.</p>
+    <div class="lp-cta">
+      <a href="/signup" class="btn btn-primary btn-lg">Create free account</a>
+      <a href="/login" class="btn btn-lg lp-btn-glass">Log in</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="lp-footer">
+  <div class="lp-wrap lp-foot-grid">
+    <div class="lp-foot-brand">
+      <span class="brand-mark"><span class="logo" data-icon="send"></span>Reachout</span>
+      <p>Outreach, job hunt and your own website, in one place.</p>
+    </div>
+    <nav aria-label="Product"><b>Product</b><a href="#features">Features</a><a href="#tour">Product tour</a><a href="#website">Website builder</a><a href="#security">Security</a></nav>
+    <nav aria-label="Help"><b>Help</b><a href="#faq">FAQ</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+    <nav aria-label="Account"><b>Account</b><a href="/login">Log in</a><a href="/signup">Create account</a></nav>
+  </div>
+  <div class="lp-wrap lp-foot-base">
+    <span>© <span id="yr">2026</span> Reachout</span>
+    <span>Not affiliated with WhatsApp, Meta, LinkedIn, GitHub or Naukri.</span>
+  </div>
+</footer>
+
+<script src="/assets/common.js"></script>
+<script src="/assets/enquiry.js"></script>
+<script src="/assets/landing.js"></script>
+</body>
+</html>

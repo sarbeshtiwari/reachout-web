@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact us · Reachout</title>
+<meta name="description" content="Questions about Reachout, pricing, partnerships or support? Send us a message and we'll reply within one working day.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{SITE_URL}}/contact">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Reachout">
+<meta property="og:url" content="{{SITE_URL}}/contact">
+<meta property="og:title" content="Contact us · Reachout">
+<meta property="og:description" content="Send us a message and we'll reply within one working day.">
+<meta property="og:image" content="{{SITE_URL}}/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Reachout","url":"{{SITE_URL}}/contact","about":{"@type":"Organization","name":"Reachout","url":"{{SITE_URL}}/"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  body { font-size: 15px; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  .nav { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: saturate(1.6) blur(10px); border-bottom: 1px solid var(--border); padding-top: env(safe-area-inset-top, 0px); }
+  .nav .wrap { display: flex; align-items: center; height: 64px; gap: 6px; }
+  .nav .links { display: flex; gap: 2px; margin-left: 28px; }
+  .nav .links a { color: var(--text-3); font-weight: 500; padding: 8px 12px; border-radius: var(--r); text-decoration: none; }
+  .nav .links a:hover, .nav .links a[aria-current] { color: var(--text); background: var(--bg-muted); }
+  .nav .sp { flex: 1; }
+  .hero { background: linear-gradient(180deg, var(--bg-subtle), var(--bg)); padding: 72px 0 96px; }
+  .layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: start; }
+  .eyebrow { color: var(--accent-text); font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+  h1 { font-size: clamp(34px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -.035em; margin-bottom: 16px; }
+  .lead { font-size: 18px; color: var(--text-3); line-height: 1.6; margin: 0 0 36px; max-width: 30em; }
+  .ways { display: grid; gap: 12px; }
+  .way { display: flex; gap: 14px; align-items: flex-start; padding: 18px; }
+  .way .ic { width: 38px; height: 38px; border-radius: 9px; border: 1px solid var(--border); display: grid; place-items: center; color: var(--accent); flex: none; background: var(--bg); box-shadow: var(--shadow-xs); }
+  .way h2 { font-size: 15.5px; font-weight: 600; margin-bottom: 2px; letter-spacing: -.01em; }
+  .way p { margin: 0; color: var(--text-3); font-size: 14px; }
+  .form-card { padding: 28px; box-shadow: var(--shadow-md); }
+  .form-card > h2 { font-size: 20px; margin-bottom: 4px; }
+  .form-card > p { color: var(--text-3); margin: 0 0 22px; }
+  footer { border-top: 1px solid var(--border); }
+  footer .wrap { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; padding-top: 28px; padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--text-4); font-size: 13.5px; }
+  footer .sp { flex: 1; }
+  footer a { color: var(--text-3); }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; gap: 40px; } .nav .links { display: none; } }
+  @media (max-width: 520px) { .hero { padding-top: 44px; } .form-card { padding: 20px; } .nav .hide-xs { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a href="/" class="brand-mark"><span class="logo" data-icon="send"></span>Reachout</a>
+    <nav class="links" aria-label="Main">
+      <a href="/#features">Features</a>
+      <a href="/#how">How it works</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/contact" aria-current="page">Contact</a>
+    </nav>
+    <span class="sp"></span>
+    <a href="/login" class="btn btn-ghost hide-xs" id="loginBtn">Log in</a>
+    <a href="/signup" class="btn btn-primary" id="ctaTop">Get started</a>
+  </div>
+</header>
+
+<main id="main" class="hero">
+  <div class="wrap layout">
+    <div>
+      <div class="eyebrow">Contact us</div>
+      <h1>We'd love to hear from you</h1>
+      <p class="lead">Questions about features, pricing for your team, a partnership idea, or stuck on something? Send us a message and a real person will reply.</p>
+      <div class="ways">
+        <div class="card way"><span class="ic" data-icon="clock"></span><div><h2>Quick replies</h2><p>We usually answer within one working day.</p></div></div>
+        <div class="card way"><span class="ic" data-icon="users"></span><div><h2>Teams and agencies</h2><p>Sending for a team or several clients? Choose "Sales &amp; pricing" and tell us your volume.</p></div></div>
+        <div class="card way"><span class="ic" data-icon="shield"></span><div><h2>Private by default</h2><p>Your message is stored encrypted and only used to reply to you.</p></div></div>
+      </div>
+    </div>
+    <div class="card form-card">
+      <h2>Send a message</h2>
+      <p>Fields marked optional can be left blank.</p>
+      <form class="enq-page-form" id="contactForm"></form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand-mark" style="font-size:14px"><span class="logo" data-icon="send" style="width:22px;height:22px;border-radius:6px"></span>Reachout</span>
+    <span class="sp"></span>
+    <span>Not affiliated with WhatsApp or Meta.</span>
+    <a href="/contact">Contact</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+    <a href="/login">Log in</a>
+    <a href="/signup">Sign up</a>
+  </div>
+</footer>
+
+<script src="/assets/common.js"></script>
+<script src="/assets/enquiry.js"></script>
+<script>
+  hydrateIcons();
+  mountEnquiry($("contactForm"), "contact_page", () => $("contactForm").scrollIntoView({ block: "center", behavior: "smooth" }));
+  fetch("/api/me").then(r => r.ok && r.json()).then(me => {
+    if (!me) return;
+    $("loginBtn").hidden = true; $("ctaTop").textContent = "Open app"; $("ctaTop").href = "/app";
+  }).catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# ---------------- build output (made by netlify-build.mjs on Netlify)
+_site/
+# The app's build, copied here only when running everything locally from one folder
+dist/
+
+# ---------------- secrets (never commit)
+*.key
+*.pem
+*.p12
+secrets/
+data/
+backups/
+.env
+.env.*
+
+# ---------------- logs / OS / editors
+*.log
+.netlify/
+.DS_Store
+.idea/
+.vscode/
+*.swp

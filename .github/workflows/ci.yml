@@ -1,0 +1,18 @@
+# Landing site: build exactly as Netlify does and check every page is filled in.
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node netlify-build.mjs
+        env:
+          URL: https://reachout.netlify.app
+          APP_URL: https://reachout-app.netlify.app
+      - run: test -f _site/index.html && test -f _site/privacy.html && ! grep -l "{{" _site/*.html
