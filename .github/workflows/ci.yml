@@ -13,6 +13,6 @@ jobs:
           node-version: "20"
       - run: node netlify-build.mjs
         env:
-          URL: https://reachout.netlify.app
-          APP_URL: https://reachout-app.netlify.app
+          URL: https://reachout-web.netlify.app
+          APP_URL: https://reachout-application.netlify.app
       - run: test -f _site/index.html && test -f _site/privacy.html && ! grep -l "{{" _site/*.html

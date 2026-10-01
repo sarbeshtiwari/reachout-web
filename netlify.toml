@@ -1,8 +1,6 @@
-# Netlify site 1: the public landing and contact pages. Base directory on Netlify: web
+# Netlify site 1: the public landing and contact pages. Base directory on Netlify: (empty)
 #
-# ▶ Replace the two addresses below with yours:
-#     reachout-api.onrender.com  → your Render service address
-#     reachout-app.netlify.app   → your app's Netlify address
+# Backend: https://reachout-backend-1uyl.onrender.com   App site: https://reachout-application.netlify.app
 # ▶ In Netlify → Site configuration → Environment variables, add NETLIFY_PROXY_SECRET
 #   (the same value as on Render and on the app site).
 
@@ -12,15 +10,15 @@
 
 [build.environment]
   NODE_VERSION = "20"
-  APP_URL = "https://reachout-app.netlify.app"
+  APP_URL = "https://reachout-application.netlify.app"
   # Shown on the privacy policy and terms pages.
-  OPERATOR_NAME = "the Reachout team"
+  OPERATOR_NAME = "Sarbesh Kumar Tiwari"
   JURISDICTION = "India"
 
 # The contact form and the enquiry pop-up post to the API; forwarded behind the scenes and signed.
 [[redirects]]
   from = "/api/*"
-  to = "https://reachout-api.onrender.com/api/:splat"
+  to = "https://reachout-backend-1uyl.onrender.com/api/:splat"
   status = 200
   force = true
   signed = "NETLIFY_PROXY_SECRET"
